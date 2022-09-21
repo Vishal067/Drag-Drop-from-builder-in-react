@@ -20,6 +20,7 @@ function FormBuilder() {
     
   };
 
+
   useEffect(() => {
     $(fb.current).formBuilder(formBuilderOptions);
   }, []);

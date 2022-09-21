@@ -93,8 +93,36 @@ function App() {
     setForm(newForm);
   };
 
+  //push form to div
+  const handlePushForm = (id) => {
+    const newDivs = Divs.map((div) => {
+      if (div.id === id) {
+        return {
+          ...div,
+          content: form,
+        };
+      }
+      return div;
+    });
+    setDivs(newDivs);
+  };
+
+ //handle form builder
+  const handleFormBuilder = () => {
+    const newForm = form.map((form) => {
+      return {
+        ...form,
+        content: <FormBuilder />,
+      };
+    });
+    setForm(newForm);
+  };
+  
 
 
+
+
+  
   return (
     <div>
       <div className="tabs">
@@ -124,12 +152,11 @@ function App() {
         {Divs.map((div) => (
           <div
             key={div.id}
-            className={activeDiv === div.id ? "div active" : "div"}
+            className={activeDiv === div.id ? "div_active" : "div"}
             onClick={() => handleActiveDiv(div.id)}
           >
             {div.name}
             <span
-
               className="delete"
               onClick={(e) => {
                 e.stopPropagation();
@@ -149,7 +176,6 @@ function App() {
           <div key={form.id}>
             {form.name}
             <span
-
               className="delete"
               onClick={(e) => {
                 e.stopPropagation();
@@ -165,6 +191,7 @@ function App() {
         </div>
       </div>
       <FormBuilder />
+    
     </div>
   );
   //     <form action="">
@@ -204,7 +231,6 @@ function App() {
 
   // </form>
   //       <FormBuilder />
-  //     </div>
   //   );
 }
 
