@@ -1,8 +1,7 @@
-body {
-    padding: 5px 0;
-    margin: 0;
-    font-family: sans-serif;
-    /* background: #f2f2f2 url("https://formbuilder.online/assets/img/noise.png") */
-      /* repeat fixed; */
-  }
-  
+.fb {
+  padding: 5px 0;
+  margin: 0;
+  font-family: sans-serif;
+  background: #f2f2f2 url("https://formbuilder.online/assets/img/noise.png")
+    repeat fixed;
+}

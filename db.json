@@ -1,0 +1,62 @@
+{
+  "forms": [
+    {
+      "formData": [
+        {
+          "type": "text",
+          "required": false,
+          "label": "Text Field",
+          "className": "form-control",
+          "name": "text-input",
+          "access": false,
+          "subtype": "text"
+        },
+        {
+          "type": "textarea",
+          "required": false,
+          "label": "Textarea",
+          "className": "form-control",
+          "name": "textarea",
+          "access": false,
+          "subtype": "textarea"
+        },
+        {
+          "type": "header",
+          "subtype": "h1",
+          "label": "Header",
+          "access": false
+        },
+        {
+          "type": "header",
+          "subtype": "h1",
+          "label": "Header",
+          "access": false
+        },
+        {
+          "type": "header",
+          "subtype": "h1",
+          "label": "Header",
+          "access": false
+        },
+        {
+          "type": "header",
+          "subtype": "h1",
+          "label": "Header",
+          "access": false
+        }
+      ],
+      "id": 1
+    },
+    {
+      "formData": [
+        {
+          "type": "header",
+          "subtype": "h1",
+          "label": "Header",
+          "access": false
+        }
+      ],
+      "id": 2
+    }
+  ]
+}
